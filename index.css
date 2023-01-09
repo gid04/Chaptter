@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* -- Hero Starts-- */
+
+.hero{
+    background-image: url(./Images/luke-chesser-pJadQetzTkI-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+nav{
+    padding: 20px;
+}
+
+.logo{
+    float: left;
+}
+
+.items {
+    float: right;
+    line-height: 100px;
+    margin-right: 50px;
+}
+
+.items li{
+    display: inline;
+    padding-left: 15px;
+}
+
+.items li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Poppins";
+}
+
+.items li a:active {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Circles start */
+
+.circles{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    z-index: -0.5;
+    
+}
+
+.circle1{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 187, 0);
+    -webkit-filter: blur(50px);
+    opacity: 0.08;
+    position: fixed;
+    top: 100px;
+    left: 500px;
+    animation-name: circle1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle1 {
+    /*0% {top:100px; left:500px}*/
+    20% {top:0px; left:1200px}
+    40% {top:350px; left: 0px}
+    60% {top: 0px; left:0px}
+    80% {top:500px; left:700px}
+    100% {top:100px; left:500px}
+}
+
+.circle2{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(194, 19, 142);
+    -webkit-filter: blur(50px);
+    opacity: 0.08;
+    position: fixed;
+    top: 200px;
+    right: 300px;
+    animation-name: circle2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes circle2 {
+    /*0% {top:0px; right:300px}*/
+    20% {top:400px; right:0px}
+    40% {top: 0px; right: 500px}
+    60% {top: 200px; right:1200px}
+    80% {top:0px; right:200px}
+    100% {top:200px; right:300px}
+}
+
+/* Circles ends */
+
+.hero h1{
+    font-size: 76px;
+    font-family:"Poppins";
+    font-weight: bolder;
+    width: 1000px;
+    padding: 50px 0px 0px 30px;
+    margin-top: 50px;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: white 0.001px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.text{
+    width: 1000px;
+    display: inline-flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0px 0px 60px;
+}
+
+.text span{
+    font-size: 11px;
+    font-family:"Poppins";
+    font-weight: lighter;
+    color: white;
+    width: 400px;
+    height: 100px;
+    padding: 20px;
+    border-left: 1px solid white;
+}
+
+.left-span{
+    margin-left: 10%;
+}
+
+.text span button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 187, 0);
+    width: 130px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.text span button a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.text span button:hover{
+    animation-name: button-anim;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation-duration: 1s;
+    transition: 2s;
+}
+
+@keyframes button-anim {
+    100%{word-spacing: 10px;}
+}
+
+.down-scroll{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    margin-left: 50%;
+    transform:translateX(-50%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.scroll-arrow i{
+    color: white;
+    font-size: 21px;
+    animation-name: scroller;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroller {
+    0%{opacity: 1;}
+    25%{opacity: 0.8;}
+    50%{opacity: 0.6;}
+    75%{opacity: 0.4;}
+    100%{opacity: 0.2;}
+}
+/* -- Hero section ends -- */
+
+/* -- About section starts -- */
+
+.about{
+    padding: 50px 0 10px 0px;
+    z-index: 2;
+}
+
+.about h1{
+    font-family: "Poppins";
+    text-align: center;
+    font-size: 56px;
+    color: rgb(3, 3, 40);
+}
+
+.values{
+    width: 1000px;
+    padding: 50px;
+    margin-left: 50%;
+    transform: translateX(-45%);
+}
+
+.values div{
+    display: inline-block;
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.values div p{
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid rgb(3, 3, 40);
+    font-family: "Poppins";
+    font-size: 12px;
+    color: rgb(3, 3, 40);
+    text-align: center;
+    background-color: white;
+    -webkit-filter: drop-shadow(4px 4px 0.25 3px);
+}
+/* -- About section ends -- */
+
+/* -- Staff start -- */
+.staff{
+    padding: 0px 0px 70px 0px;
+    display: inline-flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.members{
+    width: 250px;
+    text-align: center;
+    font-family: "Poppins";
+    color: rgb(3, 3, 40);
+}
+
+.members img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.members h3{
+    font-weight: bolder;
+    color: rgb(3, 3, 40);
+}
+
+.members span{
+    display: inline-flex;
+}
+
+.members span a{
+    margin: 10px;
+    font-size: 21px;
+    color: grey;
+}
+/* -- Staff end -- */
+
+/* -- App start -- */
+.app{
+    padding: 20px 0px 70px 0px;
+    display: inline-flex;
+    z-index: 2;
+}
+
+.mobile-app{
+    width: 900px;
+    overflow-x: hidden;
+}
+
+.mobile-app img{
+    width: 1000px;
+}
+
+.m-text h1{
+    font-family: "Poppins";
+    font-size: 66px;
+    width: 400px;
+    -webkit-text-stroke: 1.5px;
+    line-height: 66px;
+    margin-top: 120px;
+    color: rgb(3, 3, 40);
+}
+
+.m-text p{
+    font-family: "Poppins";
+    font-size: 14px;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.m-text button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 187, 0);
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.m-text button a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.m-text button:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
+
+/* -- App end -- */
