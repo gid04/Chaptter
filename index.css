@@ -6,6 +6,7 @@
 body{
     width: 100vw;
     overflow-x: hidden;
+    font-family: "Poppins";
 }
 
 /* -- Hero Starts-- */
@@ -114,7 +115,6 @@ nav{
 
 .hero h1{
     font-size: 76px;
-    font-family:"Poppins";
     font-weight: bolder;
     width: 1000px;
     padding: 50px 0px 0px 30px;
@@ -136,7 +136,6 @@ nav{
 
 .text span{
     font-size: 11px;
-    font-family:"Poppins";
     font-weight: lighter;
     color: white;
     width: 400px;
@@ -215,7 +214,6 @@ nav{
 }
 
 .about h1{
-    font-family: "Poppins";
     text-align: center;
     font-size: 56px;
     color: rgb(3, 3, 40);
@@ -239,7 +237,6 @@ nav{
     padding: 15px;
     border-radius: 15px;
     border: 1px solid rgb(3, 3, 40);
-    font-family: "Poppins";
     font-size: 12px;
     color: rgb(3, 3, 40);
     text-align: center;
@@ -284,6 +281,11 @@ nav{
     font-size: 21px;
     color: grey;
 }
+
+.members span a:hover{
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+}
 /* -- Staff end -- */
 
 /* -- App start -- */
@@ -303,7 +305,6 @@ nav{
 }
 
 .m-text h1{
-    font-family: "Poppins";
     font-size: 66px;
     width: 400px;
     -webkit-text-stroke: 1.5px;
@@ -313,7 +314,6 @@ nav{
 }
 
 .m-text p{
-    font-family: "Poppins";
     font-size: 14px;
     width: 400px;
     margin-top: 40px;
@@ -344,3 +344,109 @@ nav{
 }
 
 /* -- App end -- */
+
+/* -- Blog start -- */
+.blog{
+    padding: 0px 20px 70px 20px;
+    z-index: 2;
+}
+
+.blog h1{
+    padding: 20px;
+    border-left: 2px solid rgb(3, 3, 40);
+    font-size: 56px;
+    margin-bottom: 50px;
+    margin-left: 77px;
+    -webkit-text-stroke: 2px;
+}
+
+.blog span{
+    display: inline-flex;
+}
+
+.search{
+    flex
+    padding: 5px;
+    width: 400px;
+    border: 2x solid rgb(3, 3, 40);
+    border-radius: 40%;
+}
+
+.blog-container{
+    display: inline-flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.post{
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.post a{
+    text-decoration: none;
+    color: rgb(3, 3, 40);
+}
+
+.post img{
+    width: 300;
+    height: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.post p:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
+
+.post p{
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.post h4{
+    text-align: center;
+}
+
+#post-down{
+    animation-name: postdown;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#post-down:hover{
+    animation-name: postdown;
+    animation-play-state: paused;
+}
+
+#post-up{
+    animation-name: postup;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#post-up:hover{
+    animation-name: postup;
+    animation-play-state: paused;
+}
+
+@keyframes postdown {
+    0%{margin-top: 0px;}
+    50%{margin-top: 50px;}
+    100%{margin-top: 0px;}
+}
+
+@keyframes postup {
+    0%{margin-top: 0px;}
+    50%{margin-top: -50px;}
+    100%{margin-top: 0px;}
+}
+/* -- BLog end -- */
